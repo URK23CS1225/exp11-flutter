@@ -13,8 +13,8 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'iOS Flutter App',
       theme: ThemeData(
-        primarySwatch: Colors.deepPurple,
-        scaffoldBackgroundColor: const Color(0xFFF3E5F5),
+        primarySwatch: Colors.teal,
+        scaffoldBackgroundColor: const Color(0xFFE0F2F1),
       ),
       home: const HomePage(),
     );
@@ -35,10 +35,9 @@ class HomePage extends StatelessWidget {
             fontWeight: FontWeight.bold,
           ),
         ),
-        backgroundColor: Colors.deepPurple,
+        backgroundColor: Colors.teal,
         centerTitle: true,
       ),
-
       body: Center(
         child: Container(
           width: 350,
@@ -54,48 +53,36 @@ class HomePage extends StatelessWidget {
               ),
             ],
           ),
-
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
-
-              // Icon
               const Icon(
                 Icons.phone_iphone,
                 size: 80,
-                color: Colors.deepPurple,
+                color: Colors.teal,
               ),
-
               const SizedBox(height: 15),
-
-              // Title
               const Text(
                 'Flutter iOS App',
                 style: TextStyle(
                   fontSize: 26,
                   fontWeight: FontWeight.bold,
-                  color: Colors.deepPurple,
+                  color: Colors.teal,
                 ),
               ),
-
               const SizedBox(height: 10),
-
-              // Description
               const Text(
-                'Experiment 11\nAdd iOS as a Build Target',
+                'Add iOS as a Build Target',
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontSize: 18,
                   color: Colors.blueGrey,
                 ),
               ),
-
               const SizedBox(height: 25),
-
-              // Button
               ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.deepPurple,
+                  backgroundColor: Colors.teal,
                   foregroundColor: Colors.white,
                   padding: const EdgeInsets.symmetric(
                     horizontal: 35,
@@ -121,10 +108,7 @@ class HomePage extends StatelessWidget {
                   ),
                 ),
               ),
-
               const SizedBox(height: 15),
-
-              // Status
               Container(
                 padding: const EdgeInsets.symmetric(
                   horizontal: 20,
